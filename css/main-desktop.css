@@ -1,0 +1,141 @@
+/* Мій css*/
+
+* {
+  text-align: center;
+}
+
+header {
+  background-color: green;
+  display: -webkit-flex;
+  display: flex;
+  width: 96%;
+}
+
+.circle-img {
+  width: 350px;
+  height: 226px;
+  min-width: 300px;
+  min-height: 200px;
+  -webkit-flex: initial;
+  flex: initial;
+}
+
+.circle-img img {
+  width: 350px;
+  height: 226px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  float: left;
+}
+
+.banner {
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: yellow;
+}
+
+#navbar ul {
+  display: none;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+}
+
+#navbar li:hover ul {
+  display: block;
+}
+
+#navbar,
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navbar {
+  height: 30px;
+  background-color: #666;
+  padding-left: 25px;
+  min-width: 470px;
+}
+
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+#navbar li ol {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  float: none;
+}
+
+#navbar li:hover {
+  background-color: #f90;
+}
+
+#navbar ul li:hover {
+  background-color: #666;
+}
+
+#map {
+  width: 300px;
+  height: 150px;
+  float: left;
+}
+
+.social img {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+footer {
+  display: -webkit-flex;
+  display: flex;
+  width: 96%;
+}
+
+.left {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.center {
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: yellow;
+}
+
+.right {
+  -webkit-flex: 1;
+  flex: 1;
+  position: center;
+}
+
+.text-center a {
+  position: relative;
+  top: -7px;
+}
+
+br {
+  text-align: center;
+}
+
+.mobile li {
+  display: visible;
+}

@@ -1,0 +1,92 @@
+header {
+    color: green;
+    width: 90%;
+    background-color: green;
+    
+}
+
+.circle-img img {
+    width: 350px;
+    height: 226px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    float: left;
+}
+
+nav {
+    background-color: green;
+
+    width: 60%;
+}
+
+#navbar ul {
+  display: none;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 30px;
+  background-color: #666;
+  padding-left: 25px;
+  min-width: 470px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li ol {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 100px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+
+article {
+    background-color: green;
+    float: left;
+    width: 60%;
+}
+
+body {
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+aside {
+    background-color: yellow;
+    margin-left: 80%;
+}
+#aside-menu li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+footer {
+    background-color: red;
+    margin-left: 80%;
+}
+.left br {
+    margin-left: 80%
+}
+.mobile li {display:visible;
+    
+}

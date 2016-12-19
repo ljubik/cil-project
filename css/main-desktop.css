@@ -1,23 +1,25 @@
-/* Мій css*/
+/* Мій css desktop*/
 
-* {
-  text-align: center;
-}
 
 header {
   background-color: green;
   display: -webkit-flex;
   display: flex;
   width: 96%;
+  
 }
-
+.banner {
+  width: 70%;
+  -webkit-flex: 1;
+  flex: 1;
+  background-color: yellow;
+}
 .circle-img {
   width: 350px;
   height: 226px;
   min-width: 300px;
   min-height: 200px;
-  -webkit-flex: initial;
-  flex: initial;
+  
 }
 
 .circle-img img {
@@ -28,17 +30,17 @@ header {
   float: left;
 }
 
-.banner {
-  -webkit-flex: 1;
-  flex: 1;
-  background-color: yellow;
-}
+
+
+
+
 
 #navbar ul {
   display: none;
-  background-color: red;
+  background-color: green;
   position: absolute;
   top: 100%;
+  
 }
 
 #navbar li:hover ul {
@@ -54,7 +56,7 @@ header {
 
 #navbar {
   height: 30px;
-  background-color: #666;
+  background-color: orange;
   padding-left: 25px;
   min-width: 470px;
 }
@@ -102,6 +104,7 @@ header {
   width: 25px;
   height: 25px;
   position: relative;
+  
 }
 
 footer {
@@ -113,18 +116,28 @@ footer {
 .left {
   -webkit-flex: 1;
   flex: 1;
+  width: 350px;
+  min-width: 300px;
+
 }
 
 .center {
   -webkit-flex: 1;
   flex: 1;
   background-color: yellow;
+  text-align: center;
+}
+
+.center img {
+  width: 80px;
+  height: 30px;
+  position: relative;
 }
 
 .right {
   -webkit-flex: 1;
   flex: 1;
-  position: center;
+  text-align: right;
 }
 
 .text-center a {

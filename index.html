@@ -29,7 +29,7 @@
                     title: myPlaces[i].name
                 });
                 var infowindow = new google.maps.InfoWindow({
-                    content: '<h1>' + myPlaces[i].name + '</h1><br/>' + myPlaces[i].description
+                    content: '<b>' + myPlaces[i].name + '</b><br/>' + myPlaces[i].description
                 });
                 makeInfoWindowEvent(map, infowindow, marker);
                 markers.push(marker);
@@ -141,12 +141,15 @@
             </div>
             <div class="center">
                 <br>Контакти :
-                <br>тел. +38 097 33 42 577 +38 067 79 83 926
-                <br><a href="mailto:info@cil.org.ua">info@cil.org.ua</a> <a href="mailto:pereclad@gmail.com">pereclad@gmail.com</a>
+                <br>тел. <b>+38 097 33 42 577</b> <img src="img/kyivstar.jpg" alt="Логотипчик київстар">
+                <br><b>+38 067 79 83 926</b><img src="img/mts.jpg" alt="Логотипчик мтс">
+                <br><a href="mailto:info@cil.org.ua">info@cil.org.ua</a> 
+                <br><a href="mailto:pereclad@gmail.com">pereclad@gmail.com</a>
             </div>
             <div class="right">
                 <br>Корисні лінки :
-                <br><a href="forma.html">Зворотній зв'язок</a>
+               
+                <br><a href="" onclick="myForm()">Зворотній зв'язок</a>
                 <br><a href="rekizyty.html">Реквізити</a>
                 <br><a href="faq.html">Часті питання</a>
                 <div class="social">
@@ -158,7 +161,10 @@
                 </div>
             </div>
         </footer>
- <br>ПП "ЦІЛЬ" 2011-2016р.
+ <p>ПП "ЦІЛЬ" 2011-2016р.</p>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 
 </html>

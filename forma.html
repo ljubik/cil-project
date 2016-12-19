@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="UK">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ajax form html</title>
+</head>
+
+<body>
+    <form>
+        <label for="name">Ім'я:</label>
+        <input type="text" name="name" id="name" required/>
+        <br><label>Email:</label><input type="email" name="email" id="email" required/>
+        <br><label>Номер телефону:</label>
+        <input type="text" name="telefon" id="telefon" placeholder="380670000000" title="380670000000" pattern="[0-9]{12}">
+        <br><label>Коментар :</label>
+        <br><textarea name="comment" id="coment"></textarea>
+        <br>
+        <input type="submit" id="btn-submit">Надіслати</input>
+    </form>
+    <p id="page-loaded"></p>
+    <a href="index.html">index</a>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/forma.js"></script>
+</body>
+
+</html>

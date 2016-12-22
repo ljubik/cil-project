@@ -1,0 +1,94 @@
+.container {
+    max-width: 1200px;
+    /*word-wrap: break-word;*/
+}
+.navbar-right{
+  margin-right: auto;
+}
+
+#navbar ul {
+  display: none;
+  background-color: green;
+  position: absolute;
+  top: 100%;
+}
+
+#navbar li:hover ul {
+  display: block;
+}
+
+#navbar,
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navbar {
+  height: 30px;
+  background-color: green;
+  padding-left: 25px;
+  min-width: 470px;
+}
+
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+  
+}
+
+#navbar li ol {
+  float: left;
+  position: relative;
+  height: 100%;
+  
+}
+
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 130px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#navbar ul li {
+  float: none;
+}
+
+#navbar li:hover {
+  background-color: #f90;
+}
+
+#navbar ul li:hover {
+  background-color: #666;
+}
+
+
+.circle-img img {
+    width: 350px;
+    height: 226px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.carousel-inner>.item>img {
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+#myCarousel {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+
+
+#map {
+    width: 300px;
+    height: 150px;
+    float: left;
+}

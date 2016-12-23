@@ -1,15 +1,13 @@
 .container {
     max-width: 1200px;
     text-align: justify;
-    margin: 0 auto;
     /*word-wrap: break-word;*/
 }
 body {
   max-width: 1200px;
-  margin: 0 auto;
+  margin:5%;
   text-align: justify;
 }
-
 .navbar-right{
   margin-right: auto;
 }
@@ -104,7 +102,7 @@ body {
 .social img {
   width: 25px;
   height: 25px;
-  position: relative;
+  text-align: center;
   
 }
 
@@ -113,7 +111,7 @@ body {
   
 }
 .left {
-text-align: left;
+text-align: center;
 }
 
 .center {
@@ -121,8 +119,9 @@ text-align: left;
 }
 
 .right {
-  text-align: right;
+  text-align: center;
+  background-color: red;
 }
 .social {
-  text-align: right;
+  text-align: center;
 }

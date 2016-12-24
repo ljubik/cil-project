@@ -1,0 +1,19 @@
+<script>
+$(document).ready(function(){
+$("#name").click(function(){
+	$("#register_btn").hide();
+});
+$("#password_new").click(function(){
+	$("#register_btn").hide();
+});
+$("#password_new_check").click(function(){
+	$("#register_btn").hide();
+});
+$("#email").click(function(){
+	$("#register_btn").hide();
+});
+$("#reset_btn").click(function(){
+	$("#register_btn").toggle();
+});
+});
+</script>

@@ -1,12 +1,14 @@
 .container {
     max-width: 1200px;
     text-align: justify;
+    margin: 0 auto;
     /*word-wrap: break-word;*/
 }
 body {
   max-width: 1200px;
-  margin:5%;
+  margin: 0 auto;
   text-align: justify;
+  
 }
 .navbar-right{
   margin-right: auto;
@@ -94,9 +96,10 @@ body {
 
 
 #map {
-    width: 300px;
-    height: 150px;
-    float: left;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 
 .social img {
@@ -107,21 +110,31 @@ body {
 }
 
 #footer {
-    text-align: center;
-  
+  text-align: center;
+  background-color: #BAFF85
 }
 .left {
+margin: 0 auto;
 text-align: center;
+background-color: #BAFF85
 }
 
 .center {
+  margin: 0 auto;
   text-align: center;
+  background-color: #BAFF85
 }
 
 .right {
   text-align: center;
-  background-color: red;
+  margin: 0 auto;
+  background-color: #BAFF85;
 }
 .social {
   text-align: center;
+  background-color: #BAFF85
+}
+
+#menu{
+  display: none;
 }

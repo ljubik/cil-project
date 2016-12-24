@@ -17,15 +17,20 @@ $(function() {
                 Comment: $('#comment').val()
             },
             dataType: "json"
-        }).done(function () { //dlya perevirky ch vidpravyvsya zapyt
-            $('form').html('<h1>Thanks</h1>');
-        })
+        }).done(
+            function closeWin() {
+     myWindow.close();
+});
+            
+        //     function () { //dlya perevirky ch vidpravyvsya zapyt
+        //     // $('forma').html('<h1>Thanks</h1>');
+        //     $('#btn-submit').onClick="self.close()";
+        // });
+        
     });
 });
 
 // yahoo YQL baze to ajax
 // add to site aend form and kurs valut, needet in more site API key
 
-function closeWin() {
-    myWindow.close();
-}
+

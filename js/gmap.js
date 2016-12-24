@@ -26,7 +26,7 @@ function initialize() {
 
 function makeInfoWindowEvent(map, infowindow, marker) {
     google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
+        infowindow.open(map, marker, "width=200, height=200");
     });
 }
 

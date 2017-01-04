@@ -1,11 +1,12 @@
+@media (max-width: 450px) {
 .container {
-    max-width: 1200px;
+    max-width: 450px;
     text-align: justify;
     margin: 0 auto;
     /*word-wrap: break-word;*/
 }
 body {
-  max-width: 1200px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: justify;
   
@@ -74,7 +75,29 @@ body {
   background-color: #666;
 }
 
-
+.navbar-inverse .navbar-toggle {
+    border-color: #333;
+}
+button, html [type="button"], [type="reset"], [type="submit"] {
+    -webkit-appearance: button;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 30px;
+    margin-bottom: 8px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 .circle-img img {
     width: 350px;
     height: 226px;
@@ -111,6 +134,7 @@ body {
 
 #footer {
   text-align: center;
+  float: inherit;
   background-color: #BAFF85
 }
 .left {
@@ -137,4 +161,5 @@ background-color: #BAFF85
 
 #menu{
   display: none;
+}
 }

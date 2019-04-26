@@ -5,6 +5,59 @@
     <title>Document</title>
 </head>
 <body>
-     <script src="js/modernizr-custom_all.js" type="text/javascript"></script>
+     <div id="liqpay_checkout"></div>
+
+<form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
+accept-charset="utf-8">
+<input type="hidden" name="data" value="eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv
+biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv
+biIgOiAiZGVzY3JpcHRpb24gdGV4dCIsICJvcmRlcl9pZCIgOiAib3JkZXJfaWRfMSIgfQ=="/>
+<input type="hidden" name="signature" value="QvJD5u9Fg55PCx/Hdz6lzWtYwcI="/>
+<input type="image" 
+src="//static.liqpay.ua/buttons/p1ru.radius.png"/>
+</form>
+
+
+
+<div class="row sec step-adapter">
+            <div class="td f-cards">
+                <a target="_blank" rel="nofollow noopener noreferrer" href="https://www.mastercard.ua/uk-ua/consumers/features-benefits/safety-and-security/securecode.html"><i class="mc_white"></i></a>
+                <a target="_blank" rel="nofollow noopener noreferrer" href="http://www.visa.com.ua/ua/uk-ua/personal/security/onlineshopping.shtml"><i class="visa_white"></i></a>
+                <a target="_blank" rel="nofollow noopener noreferrer" href="https://privatbank.ua/ru/udobno-bezopasno-pokupki-internet/"><i class="privat"></i></a>
+            </div>
+            <div class="td f-rules">
+                <p>
+                    <a href="/uk/copyright">
+                        <span>©&nbsp;2010</span><span>–2019&nbsp;</span><span>ПП "ЦІЛЬ"</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="/uk/user-data-usage">Обробка персональних даних</a>
+                    <a href="/uk/offer">Договір публічної оферти</a>
+                </p>
+            </div>
+        </div>
+
+
 </body>
+<script>
+ window.LiqPayCheckoutCallback = function() {
+   LiqPayCheckout.init({
+     data:"eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv" +
+          "biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv" +
+          "biIgOiAiZGVzY3JpcHRpb24gdGV4dCIsICJvcmRlcl9pZCIgOiAib3JkZXJfaWRfMSIgfQ==",
+     signature: "QvJD5u9Fg55PCx/Hdz6lzWtYwcI=",
+     embedTo: "#liqpay_checkout",
+     mode: "embed" // embed || popup,
+      }).on("liqpay.callback", function(data){
+console.log(data.status);
+console.log(data);
+}).on("liqpay.ready", function(data){
+// ready
+}).on("liqpay.close", function(data){
+// close
+});
+ };
+</script>
+<script src="//static.liqpay.ua/libjs/checkout.js" async></script>
 </html>

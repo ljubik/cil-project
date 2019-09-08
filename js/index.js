@@ -1,6 +1,6 @@
 /*global $*/
 function myForm() {
-    window.open("forma.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
+    window.open("forma.php", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=500,left=500,width=400,height=400");
 }
 // по окончанию загрузки страницы
 $(document).ready(function() {
@@ -66,6 +66,7 @@ $(document).ready(function() {
 
 //float menu
 var menu1 = null;
+var menu2 = null;
 $(document).ready(function(){
 	
 	$(window).scroll(function () { 
